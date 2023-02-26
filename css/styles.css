@@ -218,18 +218,32 @@ img {
   border-radius: 50%;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: var(--heading-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color cubic-bezier(0.4, 0, 0.2, 1);
+    color cubic-bezier(0.4, 0, 0.2, 1), fill var(--transition);
 }
 .close-button:hover {
   background-color: var(--press-color);
   color: #ffffff;
+  fill: var(--primary-white-color);
 }
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+.modal-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+}
+/* .modal-svg:hover,
+.modal-svg:focus {
+  fill: var(--primary-white-color);
+} */
 
 .hide-h {
   position: absolute;
